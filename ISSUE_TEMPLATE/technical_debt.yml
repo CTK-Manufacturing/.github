@@ -25,14 +25,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: effort
-    attributes:
-      label: Estimated effort
-      options:
-        - Small (hours)
-        - Medium (days)
-        - Large (week or more)
-  - type: dropdown
     id: priority
     attributes:
       label: Priority
