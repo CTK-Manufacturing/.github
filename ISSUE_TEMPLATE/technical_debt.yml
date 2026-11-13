@@ -1,0 +1,46 @@
+name: Technical debt
+description: Code, infrastructure, or design that should be cleaned up or reworked
+title: "[Tech Debt]: "
+labels: ["technical debt"]
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: Current state
+      description: What is the debt, and where does it live? Link files, modules, or services.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: How does this slow us down or add risk (bugs, performance, maintainability, security)?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed fix
+      description: What should the code look like after the cleanup?
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated effort
+      options:
+        - Small (hours)
+        - Medium (days)
+        - Large (week or more)
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
